@@ -2,12 +2,11 @@ import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Total() {
+function Total({src}) {
     return (
-        <div>
-            <div className="d-flex mt-3 phone-checkout d-md-none justify-content-center align-items-center">
+        <>
                     <div className="mr-5">
-                        <img src="./img/WhatsApp Image 2021-09-10 at 12.15.14 AM.jpeg" alt=""/>
+                        <img src={src} width="200px" height="150px" alt=""/>
                     </div>
                     <div>
                         <h6>Apple iphone 12</h6>
@@ -19,8 +18,7 @@ function Total() {
                             <p className="ml-3"><i className="fas fa-minus-circle"></i></p>
                         </div>
                     </div>
-                </div>
-        </div>
+        </>
     )
 }
 
